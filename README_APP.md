@@ -1,4 +1,4 @@
-# CloudFormation Checklist App
+# GraphQL Checklist App
 
 ## Table of Contents
 
@@ -29,8 +29,8 @@ To install and run, open a terminal and use the following commands:
 Original checklist application author:
 **[David Dias](https://github.com/thedaviddias)**
 
-Modified for AWS CloudFormation:
-**[Jeshan G. BABOOA](https://github.com/jeshan)**
+Modified for GraphQL:
+**[Zach Lendon](https://github.com/zachlendon)**
 
 ## Contribute
 

@@ -19,7 +19,7 @@ class Analytics {
     details.forEach(detail => {
       const links = detail.querySelectorAll('a');
       links.forEach(link => {
-        const ref = 'ref=cloudformationchecklist';
+        const ref = 'ref=graphqlchecklist';
         let append = '';
         let href = '';
 

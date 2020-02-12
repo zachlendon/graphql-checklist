@@ -1,5 +1,5 @@
 AWSTemplateFormatVersion: '2010-09-09'
-Description: 'Deploys this website at cfnchecklist.com'
+Description: 'Deploys this website at graphqlchecklist.com'
 
 Parameters:
   Cdn:
@@ -8,7 +8,7 @@ Parameters:
     Type: String
   GithubRepo:
     Type: String
-    Default: jeshan/cloudformation-checklist
+    Default: zachlendon/graphql-checklist
 
 Resources:
   DeployCfnChecklist:
@@ -100,7 +100,7 @@ Resources:
                   - cloudformation:*
                 Effect: Allow
                 Resource:
-                  - !Sub arn:aws:cloudformation:${AWS::Region}:${AWS::AccountId}:stack/cloudformation-checklist-*
+                  - !Sub arn:aws:cloudformation:${AWS::Region}:${AWS::AccountId}:stack/graphql-checklist-*
               - Action:
                   - cloudfront:CreateInvalidation
                 Effect: Allow

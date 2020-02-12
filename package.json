@@ -1,7 +1,7 @@
 {
-  "name": "cloudformation-checklist",
+  "name": "graphql-checklist",
   "version": "0.0.1",
-  "description": "The checklist for meticulous AWS DevOps engineers",
+  "description": "The checklist for meticulous GraphQL engineers",
   "scripts": {
     "start": "gulp dev",
     "build": "gulp build",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://jeshan@github.com/jeshan/cloudformation-checklist.git"
+    "url": "git+https://zachlendon@github.com/zachlendon/graphql-checklist.git"
   },
-  "author": "Jeshan G. Babooa (j@jeshan.co)",
+  "author": "Zach Lendon (zach.lendon@gmail.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jeshan/cloudformation-checklist/issues"
+    "url": "https://github.com/zachlendon/graphql-checklist/issues"
   },
-  "homepage": "https://github.com/jeshan/cloudformation-checklist#readme",
+  "homepage": "https://github.com/zachlendon/graphql-checklist#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-eslint": "^9.0.0",

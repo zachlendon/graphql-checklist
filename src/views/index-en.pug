@@ -12,18 +12,18 @@ block main
     if _items !== undefined
 
       +checklist-section({
-        dataSection: _items.before,
-        sectionTitle: "Before"
-      })
-
-      +checklist-section({
         dataSection: _items.authoring,
         sectionTitle: "Authoring"
       })
 
       +checklist-section({
-        dataSection: _items.security,
-        sectionTitle: "Security"
+        dataSection: _items.before,
+        sectionTitle: "Before"
+      })
+
+      +checklist-section({
+        dataSection: _items.management,
+        sectionTitle: "Management"
       })
 
       +checklist-section({
@@ -32,8 +32,13 @@ block main
       })
 
       +checklist-section({
-        dataSection: _items.management,
-        sectionTitle: "Management"
+        dataSection: _items.security,
+        sectionTitle: "Security"
+      })
+
+      +checklist-section({
+        dataSection: _items.serverless,
+        sectionTitle: "Serverless"
       })
 
       +checklist-section({

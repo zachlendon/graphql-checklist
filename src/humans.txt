@@ -3,7 +3,7 @@
 
 # TEAM
 
-    Jeshan G. BABOOA -- Cloudformation Nerd -- @jeshan25
+    Zach Lendon -- Graphql Nerd -- @zachlendon
 
 # THANKS
 

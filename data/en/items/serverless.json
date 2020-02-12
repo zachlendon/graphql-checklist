@@ -1,0 +1,135 @@
+[
+  {
+    "title": "Assume function statelessness",
+    "priority": "Medium",
+    "description": "Lambda environments may be cleaned up or get executed in new containers without notice",
+    "documentation": [
+      {
+        "title": "FAQs (Why must AWS Lambda functions be stateless?)",
+        "url": "https://aws.amazon.com/lambda/faqs/"
+      }
+    ],
+    "tags": [
+      "all",
+      "medium"
+    ]
+  },
+  {
+    "title": "Compile native code in Lambda-like environments",
+    "priority": "Low",
+    "description": "Compile code against an environment as close to the real deal as possible to ensure packages will work properly in Lambda",
+    "tools": [
+      {
+        "title": "Docker images and test runners that replicate the live AWS Lambda environment",
+        "url": "https://github.com/lambci/docker-lambda"
+      }
+    ],
+    "tags": [
+      "all",
+      "docker",
+      "low"
+    ]
+  },
+  {
+    "title": "Separate the Lambda handler from your core logic",
+    "priority": "Medium",
+    "description": "Increase testability; separate Lambda-specific code to code that can run anywhere, hence testable",
+    "documentation": [
+      {
+        "title": "Reference",
+        "url": "https://docs.aws.amazon.com/lambda/latest/dg/best-practices.html?shortFooter=true#function-code"
+      }
+    ],
+    "tags": [
+      "all",
+      "serverless",
+      "medium"
+    ]
+  },
+  {
+    "title": "Reuse the execution context for performance",
+    "priority": "Medium",
+    "description": "If function initialisation is costly, reuse the context by caching resources for subsequent invocations",
+    "documentation": [
+      {
+        "title": "Reference",
+        "url": "https://docs.aws.amazon.com/lambda/latest/dg/best-practices.html?shortFooter=true#function-code"
+      }
+    ],
+    "tags": [
+      "all",
+      "serverless",
+      "medium"
+    ]
+  },
+  {
+    "title": "Use env vars to pass operational parameters to your function",
+    "priority": "Low",
+    "description": "Don't hardcode things like queue names or table names even if they are the same across your accounts. This makes the reader understand dependencies easier",
+    "documentation": [
+      {
+        "title": "Reference",
+        "url": "https://docs.aws.amazon.com/lambda/latest/dg/best-practices.html?shortFooter=true#function-code"
+      }
+    ],
+    "tags": [
+      "all",
+      "serverless",
+      "low"
+    ]
+  },
+  {
+    "title": "Put all dependencies in layers",
+    "priority": "Low",
+    "description": "Lambda layers keep deployment packages small; allowing faster deployments",
+    "documentation": [
+      {
+        "title": "Reference",
+        "url": "https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html"
+      }
+    ],
+    "tags": [
+      "all",
+      "serverless",
+      "low"
+    ]
+  },
+  {
+    "title": "Keep application code under 3 MB",
+    "priority": "Low",
+    "description": "Keep your packages small; allows for editing code in the embedded Cloud9 editor for experimentation; move all dependencies in layers",
+    "documentation": [
+      {
+        "title": "Lambda limits (see deployment package size section)",
+        "url": "https://docs.aws.amazon.com/lambda/latest/dg/limits.html?shortFooter=true"
+      }
+    ],
+    "tags": [
+      "all",
+      "serverless",
+      "low"
+    ]
+  },
+  {
+    "title": "Experiment with the console first, then generate the templates/snippets",
+    "priority": "Medium",
+    "description": "The Lambda designer helps you do things right and the Cloud9 IDE is great for prototyping. When done experimenting, generate the CloudFormation equivalent accurately to automate further deployments",
+    "tools": [
+      {
+        "title": "Former2 (Generate CloudFormation / Terraform / Troposphere templates from your existing AWS resources in your browser)",
+        "url": "https://former2.com/#section-compute-lambda"
+      }
+    ],
+    "documentation": [
+      {
+        "title": "Create a Lambda Function with the Console",
+        "url": "https://docs.aws.amazon.com/lambda/latest/dg/getting-started-create-function.html"
+      }
+    ],
+    "tags": [
+      "all",
+      "code generator",
+      "medium"
+    ]
+  }
+]
